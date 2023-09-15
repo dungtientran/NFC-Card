@@ -44,8 +44,10 @@ const Card = () => {
     const handleCallClick = () => {
         // Use the `window.location` property to initiate a phone call
         window.location.href = "tel:+1234567890"; // Replace with the desired phone number
-      };
-
+    };
+    const FacebookMessengerButton = () => {
+        window.location.href = 'https://www.messenger.com/t/dungtran'; // Replace 'USERNAME' with the recipient's Facebook username or ID
+    }
     return (
         <div
             className="w-full h-full bg-[url('/images/background_card.jpg')] bg-center bg-no-repeat bg-cover py-[46px]"
@@ -97,7 +99,7 @@ const Card = () => {
                             <div
                                 key={index}
                                 className='flex flex-col items-center gap-[10px]'
-                                onClick={handleCallClick}
+                                onClick={FacebookMessengerButton}
                             >
                                 <Image
                                     alt='icon'
