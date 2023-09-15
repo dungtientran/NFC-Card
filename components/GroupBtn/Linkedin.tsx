@@ -23,7 +23,7 @@ const Linkedin = () => {
     >
       <Image
         alt='icon'
-        src='/icons/Linkedin.svg'
+        src='/icons/Linkedin.jpg'
         width="60"
         height="60"
         className='rounded-full w-[50px] h-[50px] mobile:w-[60px] mobile:h-[60px]'

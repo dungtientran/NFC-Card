@@ -9,7 +9,7 @@ const Email = () => {
     const subject = 'Hello'; 
     const body = 'Hi there, I wanted to get in touch...'; 
 
-    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
   return (
     <div
