@@ -6,10 +6,7 @@ import React from 'react';
 const Whatsapp = () => {
 
   const WhatsAppLink = () => {
-    const phoneNumber = '+1234567890'; // Replace with the recipient's phone number, including the country code
-
-    // Construct the WhatsApp link
-    const whatsappLink = `https://wa.me/${phoneNumber}`;
+    window.location.href = `https://wa.me/0123456789?text=I'm%20interested%20in%20your%20car%20for%20sale`;
   }
 
   return (
