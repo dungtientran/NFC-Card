@@ -5,7 +5,7 @@ import React from 'react';
 
 const Phone = () => {
   const handleCallClick = () => {
-    window.location.href = "tel:+1234567890"; // Replace with the desired phone number
+    window.location.href = "tel:0933945236"; // Replace with the desired phone number
   };
   return (
     <div

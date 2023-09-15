@@ -6,9 +6,9 @@ import React from 'react'
 const Facebook = () => {
 
   const FacebookMessengerButton = () => {
-    window.location.href = 'https://fb.me/100079623247423';
+    window.location.href = 'https://fb.me/profile.php?id=100004430888066';
   }
-  
+
   return (
     <div
       className='flex flex-col items-center gap-[10px]'
