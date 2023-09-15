@@ -5,7 +5,7 @@ import React from 'react';
 
 const UserCard = () => {
     return (
-        <div className='flex flex-col items-center gap-[8px] mobile:gap-[20px]'>
+        <div className='flex flex-col items-center gap-[16px] mobile:gap-[20px]'>
             <div>
                 <Image
                     alt='user'
