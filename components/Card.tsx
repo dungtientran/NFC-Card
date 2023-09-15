@@ -2,6 +2,14 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Phone from './GroupBtn/Phone';
+import Messages from './GroupBtn/Messages';
+import Zalo from './GroupBtn/Zalo';
+import Email from './GroupBtn/Email';
+import Whatsapp from './GroupBtn/Whatsapp';
+import Website from './GroupBtn/Website';
+import Facebook from './GroupBtn/Facebook';
+import Linkedin from './GroupBtn/Linkedin';
 
 const listIcon = [
     {
@@ -42,13 +50,44 @@ const listIcon = [
 const Card = () => {
 
     const handleCallClick = () => {
-        // Use the `window.location` property to initiate a phone call
         window.location.href = "tel:+1234567890"; // Replace with the desired phone number
     };
     const FacebookMessengerButton = () => {
-        // window.location.href = 'https://www.messenger.com/t/dungtran'; // Replace 'USERNAME' with the recipient's Facebook username or ID
-        window.location.href = `fb-messenger://user-thread/${100004430888066}`; // Replace 'USERNAME' with the recipient's Facebook username or ID
+        window.location.href = 'https://www.messenger.com/t/dungtran'; // Replace 'USERNAME' with the recipient's Facebook username or ID
     }
+
+    const EmailLink = () => {
+        const emailAddress = 'example@example.com'; // Replace with the recipient's email address
+        const subject = 'Hello'; // Optional: Replace with your desired email subject
+        const body = 'Hi there, I wanted to get in touch...'; // Optional: Replace with your desired email body
+
+        // Construct the mailto link with subject and body (if provided)
+        const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+    const WhatsAppLink = () => {
+        const phoneNumber = '+1234567890'; // Replace with the recipient's phone number, including the country code
+
+        // Construct the WhatsApp link
+        const whatsappLink = `https://wa.me/${phoneNumber}`;
+    }
+    const website = () => {
+        const phoneNumber = '+1234567890'; // Replace with the recipient's phone number, including the country code
+
+        // Construct the WhatsApp link
+        const whatsappLink = `https://wa.me/${phoneNumber}`;
+    }
+
+    const LinkedInLink = () => {
+        const linkedInUsername = 'example'; // Replace with the LinkedIn username or company name
+
+        // Construct the LinkedIn profile/company page URL
+        const linkedInURL = `https://www.linkedin.com/in/${linkedInUsername}`; // For profiles
+        // OR
+        // const linkedInURL = `https://www.linkedin.com/company/${linkedInUsername}`; // For companies
+
+    }
+
+
     return (
         <div
             className="w-full h-full bg-[url('/images/background_card.jpg')] bg-center bg-no-repeat bg-cover py-[46px]"
@@ -96,7 +135,7 @@ const Card = () => {
                         Liên hệ tư vấn
                     </p>
                     <div className='grid grid-cols-4 gap-y-[30px] gap-x-[30px]'>
-                        {listIcon?.map((item, index) => (
+                        {/* {listIcon?.map((item, index) => (
                             <div
                                 key={index}
                                 className='flex flex-col items-center gap-[10px]'
@@ -113,7 +152,15 @@ const Card = () => {
                                     {item?.title}
                                 </p>
                             </div>
-                        ))}
+                        ))} */}
+                        <Phone />
+                        <Messages />
+                        <Zalo />
+                        <Email />
+                        <Whatsapp />
+                        <Website />
+                        <Facebook />
+                        <Linkedin />
                     </div>
                 </div>
             </div>
