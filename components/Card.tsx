@@ -46,7 +46,8 @@ const Card = () => {
         window.location.href = "tel:+1234567890"; // Replace with the desired phone number
     };
     const FacebookMessengerButton = () => {
-        window.location.href = 'https://www.messenger.com/t/dungtran'; // Replace 'USERNAME' with the recipient's Facebook username or ID
+        // window.location.href = 'https://www.messenger.com/t/dungtran'; // Replace 'USERNAME' with the recipient's Facebook username or ID
+        window.location.href = `fb-messenger://user-thread/${100004430888066}`; // Replace 'USERNAME' with the recipient's Facebook username or ID
     }
     return (
         <div
