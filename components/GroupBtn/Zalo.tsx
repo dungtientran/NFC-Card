@@ -1,11 +1,14 @@
-import Image from 'next/image'
-import React from 'react'
+"use client";
+
+import Image from 'next/image';
+import React from 'react';
 
 const Zalo = () => {
 
   const zaloHandle = () => {
-    window.location.href = 'https://zalo.me/84902220575'; // Replace 'USERNAME' with the recipient's Facebook username or ID
+    window.location.href = 'https://zalo.me/84902220575';
   }
+  
   return (
     <div
       className='flex flex-col items-center gap-[10px]'

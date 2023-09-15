@@ -1,11 +1,18 @@
-import Image from 'next/image'
-import React from 'react'
+"use client";
+
+import Image from 'next/image';
+import React from 'react';
 
 const Website = () => {
+
+  const handleCallClick = () => {
+    window.location.href = "https://www.google.com.vn/";
+  };
+
   return (
     <div
       className='flex flex-col items-center gap-[10px]'
-    // onClick={FacebookMessengerButton}
+    onClick={handleCallClick}
     >
       <Image
         alt='icon'

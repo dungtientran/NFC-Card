@@ -1,11 +1,18 @@
+"use client";
+
 import Image from 'next/image'
 import React from 'react'
 
 const Facebook = () => {
+
+  const FacebookMessengerButton = () => {
+    window.location.href = 'https://www.messenger.com/t/dungtran'; // Replace 'USERNAME' with the recipient's Facebook username or ID
+}
+
   return (
     <div
       className='flex flex-col items-center gap-[10px]'
-    // onClick={FacebookMessengerButton}
+    onClick={FacebookMessengerButton}
     >
       <Image
         alt='icon'

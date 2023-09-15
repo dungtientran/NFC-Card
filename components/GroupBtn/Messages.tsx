@@ -1,11 +1,18 @@
+"use client";
+
 import Image from 'next/image'
 import React from 'react'
 
 const Messages = () => {
+
+  const linkMessages = () => {
+    window.location.href = 'https://fb.me/100079623247423';
+  }
+
   return (
     <div
     className='flex flex-col items-center gap-[10px]'
-  // onClick={FacebookMessengerButton}
+  onClick={linkMessages}
   >
     <Image
       alt='icon'

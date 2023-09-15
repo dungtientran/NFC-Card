@@ -1,7 +1,21 @@
+"use client";
+
 import Image from 'next/image'
 import React from 'react'
 
 const Linkedin = () => {
+
+  
+  const LinkedInLink = () => {
+    const linkedInUsername = 'example'; // Replace with the LinkedIn username or company name
+
+    // Construct the LinkedIn profile/company page URL
+    const linkedInURL = `https://www.linkedin.com/in/${linkedInUsername}`; // For profiles
+    // OR
+    // const linkedInURL = `https://www.linkedin.com/company/${linkedInUsername}`; // For companies
+
+}
+
   return (
     <div
       className='flex flex-col items-center gap-[10px]'

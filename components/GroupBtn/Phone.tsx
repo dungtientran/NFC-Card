@@ -1,11 +1,16 @@
-import Image from 'next/image'
-import React from 'react'
+"use client";
+
+import Image from 'next/image';
+import React from 'react';
 
 const Phone = () => {
+  const handleCallClick = () => {
+    window.location.href = "tel:+1234567890"; // Replace with the desired phone number
+  };
   return (
     <div
       className='flex flex-col items-center gap-[10px]'
-    // onClick={FacebookMessengerButton}
+      onClick={handleCallClick}
     >
       <Image
         alt='icon'
