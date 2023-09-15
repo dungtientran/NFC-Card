@@ -5,21 +5,18 @@ import React from 'react'
 
 const Linkedin = () => {
 
-  
+
   const LinkedInLink = () => {
-    const linkedInUsername = 'example'; // Replace with the LinkedIn username or company name
+    const linkedInUsername = 'example';
 
-    // Construct the LinkedIn profile/company page URL
-    const linkedInURL = `https://www.linkedin.com/in/${linkedInUsername}`; // For profiles
-    // OR
-    // const linkedInURL = `https://www.linkedin.com/company/${linkedInUsername}`; // For companies
+    window.location.href = `https://www.linkedin.com/in/${linkedInUsername}`;
 
-}
+  }
 
   return (
     <div
       className='flex flex-col items-center gap-[10px]'
-    // onClick={FacebookMessengerButton}
+      onClick={LinkedInLink}
     >
       <Image
         alt='icon'
