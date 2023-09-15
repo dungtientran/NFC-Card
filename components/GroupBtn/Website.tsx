@@ -16,12 +16,12 @@ const Website = () => {
     >
       <Image
         alt='icon'
-        src='/icons/website.svg'
+        src='/icons/website.jpg'
         width="60"
         height="60"
-        className='rounded-full'
+        className='rounded-full w-[50px] h-[50px] mobile:w-[60px] mobile:h-[60px]'
       />
-      <p className='font-[400] text-[14px] leading-[19px]'>
+      <p className='font-[400] text-[12px] mobile:text-[14px] leading-[19px] '>
         Website
       </p>
     </div>

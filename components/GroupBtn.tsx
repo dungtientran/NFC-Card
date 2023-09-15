@@ -16,7 +16,7 @@ const GroupBtn = () => {
             <p className='font-bold text-[16px] leading-[21px] tracking-[2%] text-center'>
                 Liên hệ tư vấn
             </p>
-            <div className='grid grid-cols-4 gap-y-[30px] gap-x-[30px]'>
+            <div className='grid grid-cols-4 gap-[20px] mobile:gap-[30px]'>
                 <Phone />
                 <Messages />
                 <Zalo />
