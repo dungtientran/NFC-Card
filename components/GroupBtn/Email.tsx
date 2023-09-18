@@ -9,7 +9,7 @@ interface EmailProps {
 
 const Email = ({ email }: EmailProps) => {
   const EmailLink = () => {
-    const emailAddress = `Email`;
+    const emailAddress = `${email}`;
     const subject = 'Hello';
     const body = 'Hello';
 
