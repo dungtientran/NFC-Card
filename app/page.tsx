@@ -27,9 +27,9 @@ const Home = () => {
           email={user.email}
           facebook={user.facebook}
           linkedin={user.linkedin}
-          messages_fb={user.linkedin}
+          messages_fb={user.messages_fb}
           name={user.name}
-          phone={user.name}
+          phone={user.phone}
           website={user.website}
           whatsapp={user.whatsapp}
           zalo={user.zalo}

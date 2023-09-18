@@ -8,7 +8,7 @@ interface MessagesProps {
 }
 
 const Messages = ({messages}: MessagesProps) => {
-
+  console.log("mess", messages);
   const linkMessages = () => {
     window.location.href = `https://www.messenger.com/t/${messages}`;
   }
