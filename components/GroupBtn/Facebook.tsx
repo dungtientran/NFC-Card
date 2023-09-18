@@ -1,12 +1,17 @@
 "use client";
 
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
 
-const Facebook = () => {
+interface FacebookProps {
+  facebook: string
+};
+
+const Facebook = ({facebook}:FacebookProps) => {
 
   const FacebookMessengerButton = () => {
-    window.location.href = 'https://fb.me/profile.php?id=100004430888066';
+    // window.location.href = `https://fb.me/profile.php?id=100004430888066`;
+    window.location.href = `https://fb.me/${facebook}`;
   }
 
   return (

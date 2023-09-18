@@ -3,13 +3,21 @@
 import Image from 'next/image';
 import React from 'react';
 
-const UserCard = () => {
+interface UserCardProps {
+    name: string,
+    avatar: string,
+    position: string,
+    phone: string,
+    email: string
+}
+
+const UserCard = ({ avatar, email, name, phone, position }: UserCardProps) => {
     return (
         <div className='flex flex-col items-center gap-[16px] mobile:gap-[20px]'>
             <div>
                 <Image
-                    alt='user'
-                    src="/images/avata.jpg"
+                    alt={name}
+                    src={avatar}
                     width="250"
                     height="250"
                     className="rounded-full w-[200px] h-[200px] 
@@ -19,16 +27,16 @@ const UserCard = () => {
             </div>
             <div className='flex flex-col items-center gap-[8px] mobile:gap-[20px] text-white'>
                 <h2 className=' font-bold text-[22px] mobile:text-[24px] leading-[32px] tracking-[5%] text-center'>
-                    Mrs. Thanh Uyên
+                    {name}
                 </h2>
                 <p className='font-[400] text-[15px] mobile:text-[16px] leading-[21px] tracking-[2%] text-center'>
-                    Sales Manager
+                    {position}
                 </p>
                 <p className='font-[400] text-[15px] mobile:text-[16px] leading-[21px] tracking-[2%]'>
-                    Phone: 0933.945.236
+                    Phone: {phone}
                 </p>
                 <p className='font-[400] text-[14px] mobile:text-[14px] leading-[19px] tracking-[2%]'>
-                    Email: miurey.nguyen@metasolutions.software
+                    Email: {email}
                 </p>
             </div>
         </div>

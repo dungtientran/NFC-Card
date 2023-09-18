@@ -10,21 +10,57 @@ import Website from './GroupBtn/Website';
 import Facebook from './GroupBtn/Facebook';
 import Linkedin from './GroupBtn/Linkedin';
 
-const GroupBtn = () => {
+interface GroupBtnProps {
+    phone: string,
+    messages: string,
+    zalo: string,
+    email: string,
+    whatsapp: string,
+    website: string,
+    facebook: string,
+    linkedin: string
+}
+
+const GroupBtn = ({
+email,
+facebook,
+linkedin,
+messages,
+phone,
+website,
+whatsapp,
+zalo
+}:GroupBtnProps) => {
     return (
         <div className='text-white flex flex-col items-center gap-[20px]'>
             <p className='font-bold text-[16px] leading-[21px] tracking-[2%] text-center'>
                 Liên hệ tư vấn
             </p>
             <div className='grid grid-cols-4 gap-[20px] mobile:gap-[30px]'>
-                <Phone />
-                <Messages />
-                <Zalo />
-                <Email />
-                <Whatsapp />
-                <Website />
-                <Facebook />
-                <Linkedin />
+                <Phone 
+                    phone={phone}
+                />
+                <Messages
+                messages={messages}
+                 />
+                <Zalo 
+                zalo={zalo}
+                />
+                <Email
+                    email={email}
+                />
+                <Whatsapp
+                    whatsapp={whatsapp}
+                />
+                <Website 
+                    website={website}
+                />
+                <Facebook 
+                    facebook={facebook}
+                />
+                <Linkedin
+                    linkedin={linkedin}
+                />
             </div>
         </div>
     )

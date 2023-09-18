@@ -3,11 +3,15 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Zalo = () => {
+interface ZaloProps {
+  zalo: string
+}
+
+const Zalo = ({zalo}: ZaloProps) => {
 
   const zaloHandle = () => {
-    window.location.href = 'https://zalo.me/84902220575';
-  }
+    window.location.href = `https://zalo.me/${zalo}`;
+  };
   
   return (
     <div

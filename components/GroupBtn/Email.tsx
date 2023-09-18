@@ -3,18 +3,22 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Email = () => {
+interface EmailProps {
+  email: string
+}
+
+const Email = ({ email }: EmailProps) => {
   const EmailLink = () => {
-    const emailAddress = 'example@example.com'; 
-    const subject = 'Hello'; 
-    const body = 'Hi there, I wanted to get in touch...'; 
+    const emailAddress = `Email`;
+    const subject = 'Hello';
+    const body = 'Hello';
 
     window.location.href = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-}
+  }
   return (
     <div
       className='flex flex-col items-center gap-[10px]'
-    onClick={EmailLink}
+      onClick={EmailLink}
     >
       <Image
         alt='icon'

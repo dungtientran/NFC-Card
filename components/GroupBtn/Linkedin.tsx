@@ -1,13 +1,17 @@
 "use client";
 
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
 
-const Linkedin = () => {
+interface LinkedinProps {
+  linkedin: string
+}
+
+const Linkedin = ({linkedin}: LinkedinProps) => {
 
 
   const LinkedInLink = () => {
-    const linkedInUsername = 'example';
+    const linkedInUsername = {linkedin};
 
     window.location.href = `https://www.linkedin.com/in/${linkedInUsername}`;
 

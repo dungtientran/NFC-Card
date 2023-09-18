@@ -3,9 +3,13 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Phone = () => {
+interface PhoneProps {
+  phone: string
+}
+
+const Phone = ({ phone }: PhoneProps) => {
   const handleCallClick = () => {
-    window.location.href = "tel:0933945236"; // Replace with the desired phone number
+    window.location.href = `tel:${phone}`; // Replace with the desired phone number
   };
   return (
     <div
@@ -13,7 +17,7 @@ const Phone = () => {
       onClick={handleCallClick}
     >
       <Image
-        alt='icon'
+        alt='phone'
         src='/icons/phone.jpg'
         width="60"
         height="60"

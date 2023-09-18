@@ -3,11 +3,14 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Whatsapp = () => {
+interface WhatsappProps {
+  whatsapp: string
+}
+
+const Whatsapp = ({ whatsapp }: WhatsappProps) => {
 
   const WhatsAppLink = () => {
-    // window.location.href = `https://wa.me/0123456789?text=I'm%20interested%20in%20your%20car%20for%20sale`;
-    window.location.href = `https://wa.me/1XXXXXXXXXX`;
+    window.location.href = `https://wa.me/${whatsapp}`;
   }
 
   return (

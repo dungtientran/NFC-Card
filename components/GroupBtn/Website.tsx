@@ -3,10 +3,14 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Website = () => {
+interface WebsiteProps {
+  website: string
+}
+
+const Website = ({website}: WebsiteProps) => {
 
   const handleCallClick = () => {
-    window.location.href = "https://www.google.com.vn/";
+    window.location.href = `${website}`;
   };
 
   return (
@@ -15,7 +19,7 @@ const Website = () => {
     onClick={handleCallClick}
     >
       <Image
-        alt='icon'
+        alt='website'
         src='/icons/website.jpg'
         width="60"
         height="60"

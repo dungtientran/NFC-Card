@@ -4,9 +4,21 @@ import React from 'react';
 import LogoCard from './LogoCard';
 import UserCard from './UserCard';
 import GroupBtn from './GroupBtn';
+import { UserProps } from '@/app/page';
 
-
-const Card = () => {
+const Card = ({
+    email,
+    facebook,
+    linkedin,
+    messages_fb,
+    name,
+    phone,
+    position,
+    website,
+    whatsapp,
+    zalo,
+    avatar
+}: UserProps) => {
 
     return (
         <div
@@ -17,8 +29,23 @@ const Card = () => {
                 className="flex flex-col items-center justify-between h-full "
             >
                 <LogoCard />
-                <UserCard />
-                <GroupBtn />
+                <UserCard 
+                    avatar={avatar}
+                    email={email}
+                    name={name}
+                    phone={phone}
+                    position={position}
+                />
+                <GroupBtn 
+                    email={email}
+                    facebook={facebook}
+                    linkedin={linkedin}
+                    messages={messages_fb}
+                    phone={phone}
+                    website={website}
+                    whatsapp={whatsapp}
+                    zalo={zalo}
+                />
             </div>
         </div>
     )
