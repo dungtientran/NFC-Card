@@ -1,29 +1,10 @@
 "use client";
 
-import Image from 'next/image';
 import Card from '@/components/Card';
 import { useEffect, useState } from 'react';
 import { user } from "@/utils/user";
 
-export interface UserProps {
-  name: string,
-  position: string,
-  phone: string,
-  messages_fb: string,
-  zalo: string,
-  email: string,
-  whatsapp: string,
-  website: string,
-  facebook: string,
-  linkedin: string,
-  avatar: string
-}
-
-interface DataProps {
-  data: UserProps
-}
-
-export default function Home({ data }: DataProps) {
+const Home = () => {
   const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
@@ -63,3 +44,6 @@ export default function Home({ data }: DataProps) {
     </div>
   )
 }
+
+
+export default Home

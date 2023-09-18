@@ -22,29 +22,29 @@ interface GroupBtnProps {
 }
 
 const GroupBtn = ({
-email,
-facebook,
-linkedin,
-messages,
-phone,
-website,
-whatsapp,
-zalo
-}:GroupBtnProps) => {
+    email,
+    facebook,
+    linkedin,
+    messages,
+    phone,
+    website,
+    whatsapp,
+    zalo
+}: GroupBtnProps) => {
     return (
         <div className='text-white flex flex-col items-center gap-[20px]'>
             <p className='font-bold text-[16px] leading-[21px] tracking-[2%] text-center'>
                 Liên hệ tư vấn
             </p>
             <div className='grid grid-cols-4 gap-[20px] mobile:gap-[30px]'>
-                <Phone 
+                <Phone
                     phone={phone}
                 />
                 <Messages
-                messages={messages}
-                 />
-                <Zalo 
-                zalo={zalo}
+                    messages={messages}
+                />
+                <Zalo
+                    zalo={zalo}
                 />
                 <Email
                     email={email}
@@ -52,10 +52,10 @@ zalo
                 <Whatsapp
                     whatsapp={whatsapp}
                 />
-                <Website 
+                <Website
                     website={website}
                 />
-                <Facebook 
+                <Facebook
                     facebook={facebook}
                 />
                 <Linkedin

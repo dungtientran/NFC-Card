@@ -4,7 +4,21 @@ import React from 'react';
 import LogoCard from './LogoCard';
 import UserCard from './UserCard';
 import GroupBtn from './GroupBtn';
-import { UserProps } from '@/app/page';
+
+
+export interface UserProps {
+    name: string,
+    position: string,
+    phone: string,
+    messages_fb: string,
+    zalo: string,
+    email: string,
+    whatsapp: string,
+    website: string,
+    facebook: string,
+    linkedin: string,
+    avatar: string
+  }
 
 const Card = ({
     email,
